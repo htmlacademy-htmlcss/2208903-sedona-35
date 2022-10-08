@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>проект Седона</title>
+    <title>Проект Седона</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
@@ -11,7 +12,7 @@
         <a class="page-header-logo" href="#">
           <img
             class="logo"
-            src="images/logo.svg"
+            src="images/logo/logo-sedona.svg"
             width="140"
             height="70"
             alt="Логотип Седона"
@@ -28,18 +29,18 @@
           </li>
         </ul>
         <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span></a
             >
           </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное 12</span></a
             >
           </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Хочу сюда</span></a
             >
           </li>
@@ -51,15 +52,16 @@
       <section class="main-index-background-image">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img
-          src="images/index/index-background.jpg"
-          width="1200"
-          height="485"
+          src="images/index/welcome.svg"
+          width="458"
+          height="352"
           alt="Добро пожаловать в Седону"
         />
       </section>
       <section class="main-title-text">
         <h2 class="main-title">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
+          Седона — небольшой городок в Аризоне,<br />
+          заслуживающий большего!
         </h2>
         <p class="title-description">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
@@ -69,10 +71,12 @@
         <h2 class="visualy-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
+            <div class="real-town">
+              <h3 class="advantages-title">Настоящий городок</h3>
+              <p class="advantages-description">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
             <img
               class="logo item"
               src="images/advantages/advantage-1.jpg"
@@ -100,10 +104,12 @@
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
+            <div class="devils-bridge">
+              <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <p class="advantages-description">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
             <img
               class="logo item"
               src="images/advantages/advantage-2.jpg"
@@ -114,19 +120,19 @@
           </li>
         </ul>
         <ul class="service-list">
-          <li class="service-item">
+          <li class="service-item house">
             <h3 class="service-title">Жильё</h3>
             <p class="service-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
-          <li class="service-item">
-            <h3 class="service-title">Еда</h3>
+          <li class="service-item food">
+            <h3 class="service-title food">Еда</h3>
             <p class="service-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="service-item">
+          <li class="service-item souvenir">
             <h3 class="service-title">Сувениры</h3>
             <p class="service-description">
               Не только китайского, но и настоящего местного производства!
@@ -174,8 +180,8 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Vk</span>
-            </a>
+              <span class="visually-hidden">vk</span></a
+            >
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
