@@ -81,11 +81,11 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 449px;
+  width: 650px;
 }
 
 .navigation-user {
-  max-width: 308px;
+  max-width: 400px;
   margin-left: auto;
 }
 
@@ -157,6 +157,7 @@ body {
 }
 
 .title-description {
+  font-weight: 400;
   margin-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
@@ -171,7 +172,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
   text-align: center;
   flex-wrap: wrap;
@@ -308,14 +308,14 @@ body {
 
 .page-footer-container {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
 }
 
 .footer-social {
-  width: 142px;
+  width: 300px;
   margin-right: 42px;
   padding-left:  82px;
   background-color: #ffffff;
@@ -333,6 +333,7 @@ body {
   background-color: #ffffff;
   padding: 20px 0;
   margin-right: 70px;
+  margin-left: 235px;
 }
 
 .phone-number {
@@ -372,10 +373,26 @@ body {
   color: #ffffff;
 }
 
-.catalog-products {
+.catalog-filter {
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+}
+
+.catalog-filter-group {
+  width: 150px;
+}
+
+.box-price {
+  width: 288px;
+}
+
+.button-apply {
+  width: 191px;
+  height: 36px;
+}
+
+.reset {
+  width: 191px;
+  height: 36px;
 }
 
 .catalog-filter-title {
@@ -399,18 +416,16 @@ body {
 }
 
 .main-search {
-  display: flex;
   margin: 0;
   padding: 0;
   justify-content: space-between;
   list-style-type: none;
-  text-align: center;
   flex-wrap: wrap;
   background-color: #ffffff;
 }
 
-.main-search-title {
-  margin: 0;
+.sorting-area {
+  display: flex;
 }
 
 .main-search-title {
@@ -431,9 +446,8 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  text-align: center;
-  margin-left: 90px;
-  margin-right: 70px;
+  list-style-type: none;
+  padding: 0 20px;
 }
 
 .product-card-link {
