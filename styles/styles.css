@@ -167,17 +167,24 @@ button:hover {
   list-style-type: none;
 }
 
-.navigation-user-item:nth-child(2) {
-  background-image: url("..//images/icon/twelwe.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 0;
-  margin-right: 20px;
-}
-
 .navigation-user-link {
   padding: 22px 12px;
   min-width: 20px;
   min-height: 20px;
+  text-decoration: none;
+}
+
+.number {
+  margin-left: -12px;
+  width: 11px;
+  height: 10px;
+  padding: 5px 5px 5px 4px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
 .main-container {
@@ -620,6 +627,17 @@ fill: #68A2CA;
   list-style-type: none;
 }
 
+.breadcrumbs-item {
+  display: flex;
+}
+
+.breadcrumbs-item::after {
+  content: "";
+  background-image: url("..//images/breadcrumps/breadcrumbs-arrow.svg");
+  width: 6px;
+  height: 10px;
+}
+
 .breadcrumbs-link {
   margin-right: 11px;
   color: #ffffff;
@@ -769,6 +787,10 @@ fill: #68A2CA;
   margin-right: 8px;
 }
 
+.card-grid-toggle-active {
+  border: 2px solid #000000;
+}
+
 .card-grid-toggle:hover {
   border: 2px solid #000000;
 }
@@ -916,10 +938,12 @@ fill: #68A2CA;
 }
 
 .rating {
+  display: flex;
   grid-column: 1 / 2;
-  background-image: url("..//images/icon/icon-star.svg");
-  width: 18px;
-  height: 17px;
+}
+
+.arrow-image:not(:last-child) {
+  margin-right: 6px;
 }
 
 .button-rating {
@@ -951,6 +975,7 @@ fill: #68A2CA;
   padding: 12px 18px;
   color: #ffffff;
   background-color: #82B3D3;
+  border: 1px solid #82B3D3;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -960,12 +985,12 @@ fill: #68A2CA;
 
 .pagination-link:hover {
   background-color: #68A2CA;
-  border: 1px solid #82B3D3;
+  border-color: #82B3D3;
 }
 
 .pagination-link:focus {
   background-color: #68A2CA;
-  border: 1px solid #82B3D3;
+  border-color: #82B3D3;
 }
 
 .pagination-link:active {
@@ -975,6 +1000,7 @@ fill: #68A2CA;
 .pagination-current {
   color: #000000;
   background-color: #f2f2f2;
+  border: none;
 }
 
 .pagination-current:hover {
