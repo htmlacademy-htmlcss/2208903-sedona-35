@@ -894,11 +894,22 @@ fill: #68A2CA;
 
 .rating {
   display: flex;
+  margin: 0;
+  padding-top: 10px;
   grid-column: 1 / 2;
+  background-image: url("..//images/icon/icon-star.svg");
+  background-position: center;
+  width: 89px;
+  height: 17px;
+  background-repeat: space;
 }
 
-.arrow-image:not(:last-child) {
-  margin-right: 6px;
+.rating-three-stars {
+  width: 68px;
+}
+
+.rating-two-stars {
+  width: 42px;
 }
 
 .button-rating {
