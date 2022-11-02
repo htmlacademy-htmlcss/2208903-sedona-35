@@ -339,7 +339,7 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <div class="appointment-form-check-in">
+            <div class="appointment-form-check">
               <label class="form-label" for="appointment-date-check-in">
                 Дата Заезда:</label
               >
@@ -358,7 +358,7 @@
                 Мы не можем отправить вас в прошлое
               </p>
             </div>
-            <div class="appointment-form-check-out">
+            <div class="appointment-form-check">
               <label class="form-label" for="appointment-date-check-out"
                 >Дата Выезда:</label
               >
@@ -370,7 +370,6 @@
                 value="1 сентября 2023 года"
                 placeholder="01.09.2023"
               />
-
               <button class="calendar" href="#">
                 <span class="visually-hidden">Календарь</span>
               </button>
@@ -380,9 +379,11 @@
             </div>
             <div class="persons">
               <div class="number-of-visitors">
-                <label class="number-of-guest" for="number-of-adult"
-                  >Взрослые:</label
-                >
+                <span class="form-labels form-label-icon">
+                  <label class="number-of-guest" for="number-of-adult"
+                    >Взрослые:</label
+                  >
+                </span>
                 <div class="guest-count">
                   <button class="minus">
                     <span class="visually-hidden">Минус</span>
@@ -401,7 +402,7 @@
                 </div>
               </div>
               <div class="number-of-visitors">
-                <span class="form-label form-label-icon">
+                <span class="form-labels form-label-icon">
                   <label class="number-of-guest" for="number-of-children"
                     >Дети:</label
                   >
