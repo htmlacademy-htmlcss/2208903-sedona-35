@@ -25,7 +25,11 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a
+              class="navigation-link navigation-link-current"
+              href="catalog.html"
+              >Гостиницы</a
+            >
           </li>
         </ul>
         <ul class="navigation-user">
@@ -207,7 +211,7 @@
                       max="9000"
                       value="0"
                     />
-                    <span>от</span>
+                    <span class="range-price-filter">от</span>
                   </label>
                   <label class="price">
                     <input
@@ -218,7 +222,7 @@
                       max="9000"
                       value="9000"
                     />
-                    <span>до</span>
+                    <span class="range-price-filter">до</span>
                   </label>
                 </div>
                 <div class="range">
@@ -249,7 +253,9 @@
         </div>
         <section class="main-search">
           <div class="sorting-area">
-            <h2 class="main-search-title">Найдено гостиниц:<span> 38</span></h2>
+            <h2 class="main-search-title">
+              Найдено гостиниц:<span class="hotels-number"> 38</span>
+            </h2>
             <div class="select sorting-container">
               <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала дешёвые</option>

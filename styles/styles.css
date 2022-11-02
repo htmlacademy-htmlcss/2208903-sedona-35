@@ -201,7 +201,7 @@ body {
   position: absolute;
   content: "";
   height: 2px;
-  width: calc(100% - 32px);
+  width: calc(100% - 30px);
   bottom: 8px;
   background-color: #756257;
   z-index: 2;
@@ -644,7 +644,7 @@ fill: #68A2CA;
 }
 
 .modal-container {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   display: flex;
@@ -654,8 +654,9 @@ fill: #68A2CA;
 }
 
 .modal-container-close {
-  display: none;
+   /* display: none; */
 }
+
 
 .modal {
   position: relative;
@@ -684,6 +685,7 @@ fill: #68A2CA;
 
 .modal-title {
   margin: 0;
+  margin-right: 60px;
   margin-bottom: 64px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -694,12 +696,13 @@ fill: #68A2CA;
 }
 
 .form-label {
-  margin-right: 24px;
+  display: inline-block;
+  width: 119px;
+  margin-right: 18px;
   font-family: "PT Sans";
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-
 }
 
 .appointment-form-check-in {
@@ -711,31 +714,24 @@ fill: #68A2CA;
 }
 
 .date-field {
-  padding: 12px 199px 12px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 431px;
+  height: 48px;
+  padding: 12px 40px 12px 20px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
-}
-
-.form-label-2 {
-  margin-right: 18px;
-}
-
-.date-field-2 {
-  padding: 12px 199px 12px 20px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .number-of-persons::-webkit-outer-spin-button,
 .number-of-persons::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-input[value] {
-  font-family: "PT Sans";
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
 }
 
 .calendar {
@@ -754,7 +750,6 @@ input[value] {
 .field-description {
   font-size: 16px;
   line-height: 21px;
-  color: #FF5757;
   margin: 0;
   margin-top: 4px;
   margin-left: 157px;
@@ -762,12 +757,8 @@ input[value] {
   margin-bottom: 23px;
 }
 
-.field-description-2 {
-  font-size: 16px;
-  line-height: 21px;
-  margin: 0;
-  margin-top: 4px;
-  margin-left: 157px;
+.error {
+  color: #FF5757;
 }
 
 .persons {
@@ -778,37 +769,31 @@ input[value] {
 
 .number-of-visitors {
   display: flex;
+  width: 257px;
   position: relative;
 }
 
-.adult {
-  display: flex;
-  align-items: center;
+.number-of-guest {
+  display: inline-block;
+  width: 91px;
   margin-right: 46px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.children {
+.guest-count {
   display: flex;
-  align-items: center;
-  margin-top: 13px;
-  margin-right: 82px;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  width: 110px;
+  height: 48px;
+
 }
 
 .form-label-icon {
   position: relative;
-  padding-right: 26px;
 }
 
 .tooltip {
-  position: absolute;
-  margin-top: -24px;
-  margin-left: 58px;
   width: 26px;
   height: 26px;
 }
@@ -866,35 +851,48 @@ input[value] {
 }
 
 .number-of-persons {
-  display: flex;
-  text-align: center;
-  width: 11px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: auto;
+  width: 31px;
+  height: 48px;
+  padding: 14px 10px 14px 10px;
   background-color: #f2f2f2;
   border: none;
-  border-radius: 4px;
-  padding: 14px 50px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.pro {
+  display: flex;
 }
 
 .minus {
   position: absolute;
   content: "";
-  width: 14px;
+  background-image: url("..//images/icon/minus-icon.svg");
+  background-repeat: no-repeat;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding: 24px 20px;
   border: none;
-  border-bottom: 2px solid #756157;
-  opacity: 30%;
-  top: 23px;
-  right: 87px;
+  border-radius: 4px 0 0 4px;
+  top: 0;
   cursor: pointer;
 }
 
 .plus {
   position: absolute;
   content: "";
-  width: 14px;
+  background-image: url("..//images/icon/plus-icon.svg");
+  background-repeat: no-repeat;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding: 24px 20px;
   border: none;
-  border-bottom: 2px solid #756157;
-  opacity: 30%;
-  top: 23px;
+  border-radius: 0 4px 4px 0;
+  top: 0;
   right: 13px;
   cursor: pointer;
 }
@@ -902,7 +900,7 @@ input[value] {
 .button-agree {
   margin: 0;
   width: 100%;
-  padding: 18px 256px;
+  padding: 18px 51px;
   border-radius: 10px;
 }
 
@@ -1018,6 +1016,7 @@ input[value] {
 }
 
 .price {
+  position: relative;
   margin-right: 2px;
   justify-content: center;
 }
@@ -1025,8 +1024,7 @@ input[value] {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: #ffffff;
-  opacity: 30%;
+  background-color: grey;
   border-radius: 4px;
 }
 
@@ -1048,18 +1046,18 @@ input[value] {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: -1px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -1px;
 }
 
 .range-input {
-  width: 137px;
+  width: 125px;
   height: 42px;
-  padding: 0 2px;
+  padding-left: 12px;
   font: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1095,6 +1093,17 @@ input[value] {
 
 .range-input:active {
   border-color: #000000;
+}
+
+.range-price-filter {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 30%;
 }
 
 .control {
@@ -1205,9 +1214,16 @@ input[value] {
   background-color: #ffffff;
 }
 
+.sorting-area {
+  display: flex;
+  min-width: 1060px;
+  margin-bottom: 40px;
+}
+
 .main-search-title {
+  display: flex;
+  align-items: center;
   margin: 0;
-  margin-bottom: 47px;
   margin-right: 200px;
   font-size: 30px;
   line-height: 36px;
@@ -1216,9 +1232,8 @@ input[value] {
   text-transform: uppercase;
 }
 
-.sorting-area {
-  display: flex;
-  min-width: 1060px;
+.hotels-number {
+  margin-left: 8px;
 }
 
 .select {
@@ -1377,8 +1392,8 @@ input[value] {
 
 .rating {
   display: flex;
+  align-self: center;
   margin: 0;
-  padding-top: 10px;
   grid-column: 1 / 2;
   background-image: url("..//images/icon/icon-star.svg");
   background-position: center;
