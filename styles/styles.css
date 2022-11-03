@@ -254,6 +254,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  margin-top: -9px;
 }
 
 .page-container {
@@ -262,7 +263,6 @@ body {
 }
 
 .main-index-background-image {
-  margin-top: -9px;
   background-color: #94989c;
   background-image: url("../images/index/index-bg.jpg");
   background-size: cover;
@@ -535,6 +535,25 @@ body {
   line-height: 24px;
 }
 
+.field:hover {
+  color: #000000;
+  opacity: 80%;
+}
+
+.field:focus {
+  color: #000000;
+  opacity: 60%;
+  background-color: #f2f2f2;
+  border-color:  #83B3D3;
+  outline: none;
+}
+
+.field:active {
+  color: #000000;
+  border-color: #000000;
+  outline: none;
+}
+
 .newsletter-button {
   padding: 8px 50px;
   border-radius: 0;
@@ -644,7 +663,7 @@ fill: #68A2CA;
 }
 
 .modal-container {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -675,13 +694,28 @@ fill: #68A2CA;
   right: 61px;
   width: 52px;
   height: 52px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   border: none;
+  border-radius: 50%;
   background-image: url("..//images/icon/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:focus {
+  opacity: 30%;
+  outline: none;
+}
+
 
 .modal-title {
   margin: 0;
@@ -712,16 +746,38 @@ fill: #68A2CA;
 .date-field {
   display: inline-block;
   box-sizing: border-box;
-  width: 431px;
-  height: 48px;
+  position: relative;
+  width: 425px;
+  height: 42px;
   padding: 12px 40px 12px 20px;
   background-color: #f2f2f2;
-  border: none;
+  border: 3px solid #f2f2f2;
   border-radius: 4px;
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.date-field:hover {
+  color: #000000;
+  opacity: 60%;
+  background-color: #E6E6E6;
+  border-color: #E6E6E6;
+}
+
+.date-field:focus {
+  color: #000000;
+  opacity: 60%;
+  background-color: #E6E6E6;
+  border-color:  #83B3D3;
+  outline: none;
+}
+
+.date-field:active {
+  color: #000000;
+  border-color: #000000;
+  outline: none;
 }
 
 .number-of-persons::-webkit-outer-spin-button,
@@ -732,11 +788,10 @@ fill: #68A2CA;
 
  .calendar {
   position: absolute;
+  fill: rgba(117, 97, 87, 0.3);
+  background-color: transparent;
   top: 14px;
-  right: 20px;
-  content: "";
-  background-image: url("..//images/icon/calendar-icon.svg");
-  background-repeat: no-repeat;
+  right: 28px;
   width: 17px;
   height: 15px;
   border: none;
@@ -770,8 +825,8 @@ fill: #68A2CA;
 
 .number-of-guest {
   display: inline-block;
-  width: 91px;
-  margin-right: 51px;
+  position: relative;
+  margin-top: 12px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -784,10 +839,13 @@ fill: #68A2CA;
 }
 
 .form-label-icon {
+  display: inline-block;
   position: relative;
+  width: 141px;
 }
 
 .tooltip {
+  position: relative;
   width: 26px;
   height: 26px;
 }
@@ -797,7 +855,13 @@ fill: #68A2CA;
   background-color: transparent;
   padding: 0;
   margin: 0;
-  display: block;
+  display: inline-block;
+}
+
+.tooltip-image {
+  position: absolute;
+  top: 0;
+  left: 5px;
 }
 
 .tooltip-icon {
@@ -808,6 +872,8 @@ fill: #68A2CA;
 }
 
 .tooltip-text {
+  position: absolute;
+  box-sizing: border-box;
   background-color: #333333;
   color: #ffffff;
   font-size: 16px;
@@ -815,22 +881,21 @@ fill: #68A2CA;
   font-weight: normal;
   text-transform: none;
   padding: 15px 18px 18px 22px;
-  border-radius: 23px;
+  border-radius: 10px;
   display: block;
-  width: 216px;
-  position: absolute;
-  left: -115px;
+  width: 256px;
+  left: -110px;
   margin-top: 15px;
   z-index: 1;
   box-shadow: 0 25px 50px 0 #000000 ;
-  display: none;
+  /* display: none; */
 }
 
 .tooltip-text::before {
   content: "";
   background-image: url("..//images/icon/tooltip-arrow.svg");
   width: 19px;
-  height: 9px;
+  height: 8px;
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -863,22 +928,25 @@ fill: #68A2CA;
 }
 
 .minus {
-  background-image: url("..//images/icon/minus-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 48px;
+  fill: rgba(117, 97, 87, 0.3);
   background-color: #F2F2F2;
-  padding: 24px 20px;
   border: none;
   border-radius: 4px 0 0 4px;
   cursor: pointer;
 }
 
 .plus {
-  background-image: url("..//images/icon/plus-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 48px;
   background-color: #F2F2F2;
-  padding: 24px 20px;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -889,10 +957,12 @@ fill: #68A2CA;
   width: 100%;
   padding: 18px 51px;
   border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .catalog-header-background {
-  margin-top: -9px;
   padding: 35px 70px 70px 70px;
   display: block;
   background-image: url("../images/catalog/catalog-bg.jpg");
@@ -1100,13 +1170,15 @@ fill: #68A2CA;
 }
 
 .control-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 2px;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-color: #ffffff;
-  border: 2px solid #ffffff;
   border-radius: 4px;
 }
 
@@ -1115,19 +1187,20 @@ fill: #68A2CA;
 }
 
 .control:focus-within .control-mark {
-  border-color: #68A2CA;
+  outline: 3px solid #83B3D3;
 }
 
 .control:active .control-mark {
   color: #3F5E72;
   border-color: #68A2CA;
+  background-color: #E5E5E5;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked ~ .control-mark::before,
+.control-input[type="checkbox"]:checked ~ .control-mark::after {
   position: absolute;
-  top: 3px;
-  left: 2px;
+  top: 5px;
+  left: 4px;
   width: 12px;
   height: 11px;
   content: "";
@@ -1138,10 +1211,10 @@ fill: #68A2CA;
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:checked ~ .control-mark::before {
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 5px;
+  left: 5px;
   width: 10px;
   height: 10px;
   background-color: #3F5E72;
