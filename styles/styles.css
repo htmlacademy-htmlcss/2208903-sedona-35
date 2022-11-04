@@ -98,6 +98,10 @@ body {
 }
 
 .navigation-user-button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 160px;
+  height: 36px;
   padding: 8px 34px;
   font-size: 16px;
   line-height: 20px;
@@ -472,6 +476,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .search-description {
@@ -482,6 +487,8 @@ body {
 }
 
 .searching-link {
+  display: inline-block;
+  box-sizing: border-box;
   padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
@@ -509,6 +516,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .subsription-description {
@@ -525,7 +533,11 @@ body {
 }
 
 .field {
-  padding: 14px 345px 14px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 452px;
+  height: 52px;
+  padding: 12px 20px;
   background-color: #F2F2F2;
   border: none;
   outline: none;
@@ -556,8 +568,10 @@ body {
 
 .newsletter-button {
   padding: 8px 50px;
-  border-radius: 0;
   border-radius: 0px 4px 4px 0px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .page-footer-container {
@@ -571,20 +585,17 @@ body {
 
 .footer-social {
   width: 300px;
-  margin-right: 42px;
+  margin-right: 29px;
   background-color: #ffffff;
 }
 
 .footer-social-list {
   display: flex;
+  padding: 0;
 }
 
 .footer-social-item {
   list-style-type: none;
-}
-
-.footer-social-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .button-social {
@@ -673,7 +684,7 @@ fill: #68A2CA;
 }
 
 .modal-container-close {
-   /* display: none; */
+   display: none;
 }
 
 
@@ -834,6 +845,7 @@ fill: #68A2CA;
 
 .guest-count {
   display: flex;
+  position: relative;
   width: 110px;
   height: 48px;
 }
@@ -841,7 +853,7 @@ fill: #68A2CA;
 .form-label-icon {
   display: inline-block;
   position: relative;
-  width: 141px;
+  width: 139px;
 }
 
 .tooltip {
@@ -888,7 +900,7 @@ fill: #68A2CA;
   margin-top: 15px;
   z-index: 1;
   box-shadow: 0 25px 50px 0 #000000 ;
-  /* display: none; */
+  display: none;
 }
 
 .tooltip-text::before {
@@ -912,44 +924,73 @@ fill: #68A2CA;
 .number-of-persons {
   display: inline-block;
   box-sizing: border-box;
-  width: 31px;
+  width: 111px;
   height: 48px;
-  padding: 14px 10px 14px 10px;
+  padding: 14px 50px 14px 50px;
   background-color: #f2f2f2;
   border: none;
-  outline: none;
+  border-radius: 4px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
 }
 
-.pro {
-  display: flex;
+ .minus {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  background-color: transparent;
+  background-image: url("..//images/icon/minus-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  opacity: 30%;
+  cursor: pointer;
+ }
+
+.minus:hover {
+  opacity: 1;
 }
 
-.minus {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 48px;
-  fill: rgba(117, 97, 87, 0.3);
-  background-color: #F2F2F2;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  cursor: pointer;
+.minus:focus {
+  outline: 3px solid #68A2CA;
+  opacity: 1;
+}
+
+.minus:active {
+  opacity: 30%;
+  outline: none;
 }
 
 .plus {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 48px;
-  background-color: #F2F2F2;
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  background-image: url("..//images/icon/plus-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.plus:hover {
+  opacity: 1;
+}
+
+.plus:focus {
+  outline: 3px solid #68A2CA;
+}
+
+.plus:active {
+  opacity: 30%;
+  outline: none;
 }
 
 .button-agree {
@@ -1054,7 +1095,7 @@ fill: #68A2CA;
 
 .infrastructure {
   width: 151px;
-  margin-right: 40px;
+  margin-right: 70px;
 }
 
 .type-of-living {
@@ -1069,7 +1110,7 @@ fill: #68A2CA;
 
 .price-range {
   display: flex;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .price {
@@ -1481,6 +1522,11 @@ fill: #68A2CA;
   height: 37px;
   color: #333333;
   background-color: #f2f2f2;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .pagination {
