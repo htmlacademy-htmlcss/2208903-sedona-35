@@ -20,7 +20,9 @@
         /></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html"
+              >Главная</a
+            >
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -72,7 +74,7 @@
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-button button-brown" href="#"
-              >Хочу сюда</a
+              >Хочу сюда!</a
             >
           </li>
         </ul>
@@ -212,14 +214,15 @@
         <section class="subscription">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subsription-description">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br />
+            честное бойскаутское!
           </p>
           <form
             class="newsletter-form"
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label for="newsletter-email">Ваш E-mail</label>
+            <label for="newsletter-email"></label>
             <input
               class="field"
               placeholder="Ваш e-mail"
@@ -325,5 +328,175 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form
+            class="appointment-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="appointment-form-check">
+              <label class="form-label" for="appointment-date-check-in">
+                Дата Заезда:</label
+              >
+              <input
+                class="date-field"
+                type="text"
+                id="appointment-date-check-in"
+                name="appointment-date-check-in"
+                value="27 апреля 2020 года"
+                placeholder="27.05.2020"
+              />
+              <button class="calendar">
+                <svg
+                  width="17"
+                  height="15"
+                  viewBox="0 0 17 15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.14 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"
+                  />
+                  <path
+                    d="M15.4 2h-2V0h-1v2h-8V0h-1v2h-2c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12h-14V7h14v7Zm-14-8V3h2v2h1V3h8v2h1V3h2v3h-14Z"
+                  />
+                  <path
+                    d="M8.4 10c.3 0 .5-.2.5-.5S8.7 9 8.4 9s-.5.2-.5.5.2.5.5.5ZM10.64 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM6.14 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.9 10c.3 0 .5-.2.5-.5S4.2 9 3.9 9s-.5.2-.5.5.2.5.5.5ZM3.9 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8.4 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.64 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.9 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.9 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"
+                  />
+                </svg>
+                <span class="visually-hidden">Календарь</span>
+              </button>
+              <p class="field-description error">
+                Мы не можем отправить вас в прошлое
+              </p>
+            </div>
+            <div class="appointment-form-check">
+              <label class="form-label" for="appointment-date-check-out"
+                >Дата Выезда:</label
+              >
+              <input
+                class="date-field"
+                type="text"
+                id="appointment-date-check-out"
+                name="appointment-date-check-out"
+                value="1 сентября 2023 года"
+                placeholder="01.09.2023"
+              />
+              <button class="calendar">
+                <svg
+                  width="17"
+                  height="15"
+                  viewBox="0 0 17 15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.14 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"
+                  />
+                  <path
+                    d="M15.4 2h-2V0h-1v2h-8V0h-1v2h-2c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12h-14V7h14v7Zm-14-8V3h2v2h1V3h8v2h1V3h2v3h-14Z"
+                  />
+                  <path
+                    d="M8.4 10c.3 0 .5-.2.5-.5S8.7 9 8.4 9s-.5.2-.5.5.2.5.5.5ZM10.64 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM6.14 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.9 10c.3 0 .5-.2.5-.5S4.2 9 3.9 9s-.5.2-.5.5.2.5.5.5ZM3.9 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8.4 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.64 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.9 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.9 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"
+                  />
+                </svg>
+                <span class="visually-hidden">Календарь</span>
+              </button>
+              <p class="field-description">
+                На эти даты есть свободные номера. Пока есть.
+              </p>
+            </div>
+            <div class="persons">
+              <div class="number-of-visitors">
+                <span class="form-labels form-label-icon">
+                  <label class="number-of-guest" for="number-of-adult"
+                    >Взрослые:</label
+                  >
+                </span>
+                <div class="guest-count">
+                  <button class="minus">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input
+                    class="number-of-persons"
+                    type="text"
+                    id="number-of-adult"
+                    min="1"
+                    name="number-of-persons"
+                    value="2"
+                    required
+                  />
+                  <button class="plus">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </div>
+              </div>
+              <div class="number-of-visitors">
+                <span class="form-labels form-label-icon">
+                  <label class="number-of-guest" for="number-of-children"
+                    >Дети</label
+                  >
+                  <span class="tooltip"
+                    ><button
+                      class="tooltip-toggle"
+                      type="button"
+                      aria-labelledby="tooltip-label-date"
+                    >
+                      <svg
+                        class="tooltip-image"
+                        width="26"
+                        height="26"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </button>
+                    <span
+                      class="tooltip-text"
+                      role="tooltip"
+                      id="tooltip-label-date"
+                      >Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.</span
+                    >
+                  </span>
+                </span>
+                <div class="guest-count">
+                  <button class="minus">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input
+                    class="number-of-persons"
+                    type="number"
+                    id="number-of-children"
+                    min="1"
+                    name="number-of-persons"
+                    value="2"
+                    required
+                  />
+                  <button class="plus">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button button-agree" type="submit">найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
