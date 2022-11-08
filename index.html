@@ -4,6 +4,79 @@
     <meta charset="utf-8" />
     <title>Проект Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon.ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon.ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon.ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon.ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon.ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon.ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon.ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon.ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon.ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon.ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon.ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon.ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon.ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
@@ -349,11 +422,12 @@
                 type="text"
                 id="appointment-date-check-in"
                 name="appointment-date-check-in"
-                value="27 апреля 2020 года"
-                placeholder="27.05.2020"
+                value="27 апреля 2020"
+                placeholder="Укажите дату"
               />
               <button class="calendar">
                 <svg
+                  class="calendar-icon"
                   width="17"
                   height="15"
                   viewBox="0 0 17 15"
@@ -384,11 +458,12 @@
                 type="text"
                 id="appointment-date-check-out"
                 name="appointment-date-check-out"
-                value="1 сентября 2023 года"
-                placeholder="01.09.2023"
+                value="1 сентября 2023"
+                placeholder="Укажите дату"
               />
               <button class="calendar">
                 <svg
+                  class="calendar-icon"
                   width="17"
                   height="15"
                   viewBox="0 0 17 15"
@@ -423,7 +498,7 @@
                   </button>
                   <input
                     class="number-of-persons"
-                    type="text"
+                    type="number"
                     id="number-of-adult"
                     min="1"
                     name="number-of-persons"
@@ -438,7 +513,7 @@
               <div class="number-of-visitors">
                 <span class="form-labels form-label-icon">
                   <label class="number-of-guest" for="number-of-children"
-                    >Дети</label
+                    >Дети:</label
                   >
                   <span class="tooltip"
                     ><button
@@ -448,17 +523,16 @@
                     >
                       <svg
                         class="tooltip-image"
-                        width="26"
-                        height="26"
-                        viewBox="0 0 26 26"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
                         <path
                           fill-rule="evenodd"
                           clip-rule="evenodd"
-                          d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                          d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z"
                           fill="#fff"
                         />
                       </svg>
