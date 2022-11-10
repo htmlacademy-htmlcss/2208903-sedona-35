@@ -202,6 +202,7 @@
                         type="checkbox"
                         name="Swimming pool"
                         checked
+                        disabled
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Бассейн</span>
@@ -283,6 +284,7 @@
                       min="0"
                       max="9000"
                       value="0"
+                      required
                     />
                     <span class="range-price-filter">от</span>
                   </label>
@@ -294,6 +296,7 @@
                       min="1"
                       max="9000"
                       value="9000"
+                      required
                     />
                     <span class="range-price-filter">до</span>
                   </label>
@@ -327,8 +330,9 @@
         <section class="main-search">
           <div class="sorting-area">
             <h2 class="main-search-title">
-              Найдено гостиниц:<span class="hotels-number"> 38</span>
+              Найдено гостиниц:<span class="hotels-number">38</span>
             </h2>
+
             <div class="select sorting-container">
               <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала дешевые</option>
@@ -406,7 +410,7 @@
                 >Подробнее</a
               >
               <a class="button button-favorites" href="#">В избранное</a>
-              <p class="rating">
+              <p class="rating rating-four-stars">
                 <span class="visually-hidden">4 звезды.</span>
               </p>
               <p class="button-rating">Рейтинг: 8,5</p>
@@ -430,7 +434,7 @@
                 >Подробнее</a
               >
               <a class="button button-green" href="#">В избранном</a>
-              <p class="rating">
+              <p class="rating rating-four-stars">
                 <span class="visually-hidden">4 звезды.</span>
               </p>
               <p class="button-rating">Рейтинг: 9,2</p>
