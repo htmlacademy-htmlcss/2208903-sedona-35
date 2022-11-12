@@ -1451,7 +1451,7 @@ img {
   border-radius: 50%;
 }
 
-.control-input:disabled {
+.control-input:disabled ~ span {
   opacity: 50%;
 }
 
