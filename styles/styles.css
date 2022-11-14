@@ -829,7 +829,7 @@ img {
   display: inline-block;
   width: 119px;
   margin-right: 13px;
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -1394,7 +1394,7 @@ img {
   position: absolute;
   top: 12px;
   right: 20px;
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
